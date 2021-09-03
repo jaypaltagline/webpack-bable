@@ -1,33 +1,35 @@
 {
   "name": "webpack-from-scratch",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open --hot"
+    "start": "webpack-dev-server  --config webpack.dev.js --open --hot",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
-  "author": "Jaypal parmar",
-  "license": "MIT",
-  "dependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@babel/preset-react": "^7.14.5",
-    "babel-loader": "^8.2.2",
-    "css": "^3.0.0",
-    "css-loader": "^6.2.0",
-    "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.3.2",
-    "path": "^0.12.7",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "style-loader": "^3.2.1",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "webpack-dev-server": "^4.1.0"
+    "bootstrap": "^4.3.1",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "popper.js": "^1.14.7",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^2.0.0"
   }
 }

@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import App from './App.jsx';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+import { run } from "./app/app";
+import "./main.scss";
+import { AlertService } from "./app/alert.service";
+import { ComponentService } from "./app/component.service";
+const alertService = new AlertService();
+const componentService = new ComponentService();
+run(alertService, componentService);
