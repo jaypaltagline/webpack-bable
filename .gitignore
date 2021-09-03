@@ -1,1 +1,20 @@
+# package directories
 node_modules
+jspm_packages
+
+
+
+# Serverless directories
+.serverless
+
+# Build directories
+.webpack
+
+# Mac folder stuff
+.DS_Store
+
+#amplify
+build/
+dist/
+node_modules/
+.vscode/settings.json
